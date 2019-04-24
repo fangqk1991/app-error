@@ -10,6 +10,8 @@ npm install @fangqk1991/app-error
 In Node.js:
 
 ```
-const AppError = require('@fangqk1991/app-error')
+const AppError = require('@agora-lab/app-error')
+...
+// somewhere you want to throw an exception.
 throw new AppError(message, statusCode, extras)
 ```
