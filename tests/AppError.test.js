@@ -2,15 +2,15 @@ const AppError = require('..')
 const assert = require('assert')
 
 describe('Test AppError class', function() {
-  const errorMsg = 'Some error message.'
-  const errorStatus = 404
-  const errorExtras = { k1: 1, k2: 2 }
+  const message = 'Some error message.'
+  const statusCode = 404
+  const extras = { k1: 1, k2: 2 }
 
-  it(`only message.`, () => {
+  it(`Only message.`, () => {
     try {
-      throw new AppError(errorMsg)
+      throw new AppError(message)
     } catch (err) {
-      assert.ok(err.message === errorMsg)
+      assert.ok(err.message === message)
       assert.ok(err.statusCode === 500)
       assert.ok(err instanceof AppError)
     }
@@ -18,11 +18,11 @@ describe('Test AppError class', function() {
 
   it(`Full parameters.`, () => {
     try {
-      throw new AppError(errorMsg, errorStatus, errorExtras)
+      throw new AppError(message, statusCode, extras)
     } catch (err) {
-      assert.ok(err.message === errorMsg)
-      assert.ok(err.statusCode === errorStatus)
-      assert.ok(err.extras === errorExtras)
+      assert.ok(err.message === message)
+      assert.ok(err.statusCode === statusCode)
+      assert.ok(err.extras === extras)
       assert.ok(err instanceof AppError)
     }
   })
