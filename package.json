@@ -1,5 +1,5 @@
 {
-  "name": "@fangqk1991/app-error",
+  "name": "@agora-lab/app-error",
   "version": "0.1.2",
   "description": "An error class contains statusCode, extras.",
   "main": "index.js",
