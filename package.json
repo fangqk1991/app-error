@@ -1,6 +1,6 @@
 {
   "name": "@fangqk1991/app-error",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An error class contains statusCode, extras.",
   "main": "index.js",
   "scripts": {
