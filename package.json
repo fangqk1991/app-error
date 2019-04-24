@@ -1,12 +1,13 @@
 {
-  "name": "app-error",
+  "name": "@fangqk1991/app-error",
   "version": "0.1.0",
-  "description": "",
+  "description": "An error class contains statusCode, extras.",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha tests/**/*.test.js --timeout 10000"
   },
-  "keywords": [],
+  "repository": "https://github.com/fangqk1991/app-error.git",
+  "keywords": ["error", "app-error"],
   "author": "fang <me@fangqk.com>",
   "license": "MIT",
   "devDependencies": {
