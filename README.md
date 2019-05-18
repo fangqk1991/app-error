@@ -3,7 +3,7 @@ An error class contains statusCode, extras.
 
 ## Installation
 ```
-npm install @fangqk1991/app-error
+npm install @agora-lab/app-error
 ```
 
 ## Usage
