@@ -1,4 +1,4 @@
-const AppError = require('..')
+const AppError = require('../../lib').default
 const assert = require('assert')
 
 describe('Test AppError class', function() {
@@ -12,7 +12,7 @@ describe('Test AppError class', function() {
     } catch (err) {
       assert.ok(err.message === message)
       assert.ok(err.statusCode === 500)
-      assert.ok(err instanceof AppError)
+      assert.ok(err.name === AppError.name)
     }
   })
 
@@ -23,7 +23,7 @@ describe('Test AppError class', function() {
       assert.ok(err.message === message)
       assert.ok(err.statusCode === statusCode)
       assert.ok(err.extras === extras)
-      assert.ok(err instanceof AppError)
+      assert.ok(err.name === AppError.name)
     }
   })
 })
