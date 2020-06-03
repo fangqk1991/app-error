@@ -1,5 +1,5 @@
 import * as assert from 'assert'
-import AppError from "../../src"
+import AppError from '../../src'
 
 describe('Test AppError class', (): void => {
   const message = 'Some error message.'
@@ -12,7 +12,7 @@ describe('Test AppError class', (): void => {
     } catch (err) {
       assert.ok(err.message === message)
       assert.ok(err.statusCode === 500)
-      assert.ok(err.name === AppError.name)
+      assert.ok(err.name === 'AppError')
     }
   })
 
@@ -23,7 +23,7 @@ describe('Test AppError class', (): void => {
       assert.ok(err.message === message)
       assert.ok(err.statusCode === statusCode)
       assert.ok(err.extras === extras)
-      assert.ok(err.name === AppError.name)
+      assert.ok(err.name === 'AppError')
     }
   })
 })
